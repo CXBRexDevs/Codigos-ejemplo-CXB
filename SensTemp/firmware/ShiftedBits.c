@@ -43,7 +43,7 @@ unsigned char dataShift[] = "Shifted Data: ";
 uint16_t recivedData;
 uint16_t bitMask = 0x3FFF;
 
-void writeBinaryData(uint16_t value)
+void writeBinaryData(uint16_t value) //Función para convertir a binario la información entregada por MAX31855
 {
     char binaryString[17];  
     binaryString[16] = '\0';  
