@@ -38,7 +38,7 @@
 char dataRead[16] = "";
 unsigned char dataOk[] =  "Temperatura:";
 uint16_t recivedData;
-uint16_t bitMask = 0x3FFF;
+uint16_t bitMask = 0x3FFF; //Máscara para remover información sobrante
 
 int main ( void )
 {
@@ -53,7 +53,7 @@ int main ( void )
         SPI1_Read(&recivedData,16); //Lee los datos del bus SPI
         
         uint16_t shiftedData = (recivedData >> 2) & bitMask; //Corre los datos para compensar los 14 bits del max31855
-        uint16_t regData = 1.427*shiftedData-24.57;
+        uint16_t regData = 1.427*shiftedData-24.57; //Regresión lineal (Cambie basado en sus datos medidos)
         sprintf(dataRead,"%u\n", regData);  //Pone en Buffer los datos movidos
         UART5_Write(&dataOk[0],sizeof(dataOk));
         UART5_Write(dataRead, strlen(dataRead));
