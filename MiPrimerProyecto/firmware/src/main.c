@@ -27,7 +27,7 @@
 #include <stdlib.h>                     // Defines EXIT_FAILURE
 #include "definitions.h"                // SYS function prototypes
 
-/* Define a dentro del buffer el mensaje que se enviar· por
+/* Define a dentro del buffer el mensaje que se enviar√° por
 medio del UART5*/
 unsigned char buffer[]="Hola mundo";
 
@@ -46,13 +46,11 @@ int main ( void )
     	else{
         	LED0_Set(); // Encienda LED0
         	LED1_Clear(); // Apague LED1
-        	CORETIMER_DelayMs (500); // Espere 0.5 segundos
     	}
 	
-        /*EnviÈ el mensaje almacenado en la variable ?buffer? a
-        UART5 y espere un segundo*/
+        /*Envi√© el mensaje almacenado en la variable "buffer" a
+        UART5*/
         UART5_Write(&buffer[0],sizeof(buffer));
-        CORETIMER_DelayMs (1000);
 
         SYS_Tasks ( );
     }
