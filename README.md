@@ -4,7 +4,7 @@ Es una plataforma de desarrollo orientada hacia control avanzado de variables f�
 
 En este repositorio se encuentran los planos y archivos de fabricación, códigos ejemplo, circuitos de prueba externos a la tarjeta electronica y entre otros archivos de interés.
 
-# Gía de instalación programador
+# Guía de instalación programador
 
 ## Advertencia: Pickit 3 solo es compatible con versiones de MPLAB anteriores a la versión 6.05
 
