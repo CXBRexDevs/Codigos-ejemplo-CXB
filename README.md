@@ -19,7 +19,7 @@ En este repositorio se encuentran los planos y archivos de fabricación, código
   
   Para la instalación de estos dos programas se debe ingresar a [MPLAB® X IDE | Microchip Technology](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide) . Una vez en la página, seleccione la opción “Download MPLAB X IDE” y posteriormente descargue la versión de Windows.
 
-![](C:\Users\PEDRO\AppData\Roaming\marktext\images\2023-07-07-10-11-16-image.png)
+![]([C:\Users\PEDRO\AppData\Roaming\marktext\images\2023-07-07-10-11-16-image.png](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/2023-07-07-10-11-16-image.png?raw=true))
 
 Puede descargar versiones anteriores navegando en la misma página al botón "Go To Downloads Archives" y buscando en el navegador su versión predilecta.
 
