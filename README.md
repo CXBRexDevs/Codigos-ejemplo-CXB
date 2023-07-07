@@ -5,7 +5,7 @@ En este repositorio se encuentran los planos y archivos de fabricación, código
 
 # Gía de instalación programador
 
-## <mark>Advertencia: Pickit 3 soloes compatible con versiones de MPLAB  anteriores a la 6.05 </mark>
+## Advertencia: Pickit 3 solo es compatible con versiones de MPLAB anteriores a la versión 6.05
 
 ## Programas necesarios
 
