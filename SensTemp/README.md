@@ -14,6 +14,8 @@
 
 - Haber concluido tutorial "MiPrimerProyecto"
 
+- Termómetro 
+
 En este ejemplo se programará el puerto SPI se usa para interpretar la señal de la interfaz MAX31855 para la lectura de termopares de tipo K. Empiece por crear un proyecto igual que como indica en la siguiente foto. 
 
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/SPI2.png?raw=true)
@@ -96,7 +98,7 @@ Agregue un temporizador para repetir el proceso cada segundo.
 CORETIMER_DelayMs(1000);
 ```
 
-Procese la información leída, linealizandola para obtener una resultado que se asemeje tanto como sea posible a la realidad. En este caso, se compararon con las lecturas de un termométro digital y se hizo una regresión lineal. agregue una línea de código que procese la información provista por el puerto SPI basado en la ecuación líneal botenida en su regresión.
+Procese la información leída, linealizandola para obtener una resultado que se asemeje tanto como sea posible a la realidad. En este caso, se compararon con las lecturas de un termómetro digital y se hizo una regresión lineal. agregue una línea de código que procese la información provista por el puerto SPI basado en la ecuación líneal botenida en su regresión.
 
 ```c
 uint16_t regData = 1.427*shiftedData-24.57; //Regresión lineal
