@@ -83,19 +83,23 @@ uint16_t shiftedData = (recivedData >> 2) & bitMask; //Corre los datos para comp
 
 > Nota: Puede experimentar explorar esto más a fondo revisando el código "ShiftedBits.c" en el directorio [firmware](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/tree/main/SensTemp/firmware) de este proyecto.
 
-Imprima la información recibida haciendo uso de un buffer, la instrucción "sprintf()" junto con la información imprima un testigo que le indique que está leyendo y finalmente agregue un final de línea.
+Imprima la información recibida haciendo uso de la función "printf()".
 
 ```c
-sprintf(dataRead,"%u\n", regData);
-UART5_Write(&dataOk[0],sizeof(dataOk)); 
-UART5_Write(dataRead, strlen(dataRead));
-UART5_Write("\n", 1);
+uint16_t regData = 1.427*shiftedData-24.57; //Regresión lineal (Cambie basado en sus datos medidos)
+printf("Temperatura: %u \r", regData);
 ```
 
-Finalmente agregue un temporizador para repetir el proceso cada segundo.
+Agregue un temporizador para repetir el proceso cada segundo.
 
 ```c
 CORETIMER_DelayMs(1000);
+```
+
+Procese la información leída, linealizandola para obtener una resultado que se asemeje tanto como sea posible a la realidad. En este caso, se compararon con las lecturas de un termométro digital y se hizo una regresión lineal. agregue una línea de código que procese la información provista por el puerto SPI basado en la ecuación líneal botenida en su regresión.
+
+```c
+uint16_t regData = 1.427*shiftedData-24.57; //Regresión lineal
 ```
 
 Su código debería verse de la siguiente forma:
@@ -124,10 +128,8 @@ int main ( void )
 
         uint16_t shiftedData = (recivedData >> 2) & bitMask; //Corre los datos para compensar los 14 bits del max31855
 
-        sprintf(dataRead,"%u\n", regData);  //Pone en Buffer los datos movidos
-        UART5_Write(&dataOk[0],sizeof(dataOk)); //Imprime la variable dataOk
-        UART5_Write(dataRead, strlen(dataRead)); //Imprime al valor leido del desde el periférico SPI1
-        UART5_Write("\n", 1); //Imprime un final de línea
+        uint16_t regData = 1.427*shiftedData-24.57; //Regresión lineal (Cambie basado en sus datos medidos)
+        printf("Temperatura: %u \r", regData);
 
         CORETIMER_DelayMs(1000); //Eséra un segundo antes deempezar de nuevo
 
