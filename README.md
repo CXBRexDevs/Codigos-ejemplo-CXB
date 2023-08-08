@@ -98,3 +98,5 @@ Una vez seleccionado aparecerá una tabla que indicara las extensiones requerida
 En caso de ser necesario también puede seleccionar las casillas del contenido opcional para que sean también se instale ese contenido, haga clic en "Finish" y espere, esto puede tomar unos minutos.  Se abrirá el siguiente entorno cuando haya terminado
 
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/image24.png?raw=true)
+
+Ahora puede seguir la guía en "Mi primer proyecto", la cuál le guirá en este mismo proceso y le indicará como programar comunicación UART a USB o UART a RS232. Tmabién descargar este repositorio y abrir algún otro de los proyectos aquí descritos.
