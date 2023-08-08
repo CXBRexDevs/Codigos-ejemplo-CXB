@@ -99,4 +99,4 @@ En caso de ser necesario también puede seleccionar las casillas del contenido o
 
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/image24.png?raw=true)
 
-Ahora puede seguir la guía en "Mi primer proyecto", la cuál le guirá en este mismo proceso y le indicará como programar comunicación UART a USB o UART a RS232. Tmabién descargar este repositorio y abrir algún otro de los proyectos aquí descritos.
+Ahora puede seguir la guía en "Mi primer proyecto", la cuál le guirá en este mismo proceso y le indicará como programar comunicación UART a USB o UART a RS232. También descargar este repositorio y abrir algún otro de los proyectos aquí descritos.
