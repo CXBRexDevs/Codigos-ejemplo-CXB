@@ -18,7 +18,7 @@ Conecte el conversor de información serial TTL a USB a su respectivo terminal y
 
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/SenTempUARTclose.png?raw=true)
 
-Programe el microcontrolador con el ejemplo provisto en este repositorio ([SensTemp](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/tree/main/SensTemp)), podrá ver en el terminal serial el siguiente menú:
+Conecte alimentación, encienda el switch y programe el microcontrolador con el ejemplo provisto en este repositorio ([SensTemp](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/tree/main/SensTemp)), podrá ver en el terminal serial el siguiente menú:
 
 ```
     #############################
