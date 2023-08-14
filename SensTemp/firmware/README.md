@@ -14,12 +14,20 @@ Conecte el termopar el terminal SENS TEMP, teniendo en cuenta la polaridad de su
 
 > **Nota:** Si la medida de temperatura resulta muy sensible al ruido, puede conectar (o soldar) un capacitor de entre 10nF a 100nF a la bornera del termopar para mitigar lo.
 
-Conecte el conversor de información serial TTL a USB a su respectivo terminal y luego conectelo a su PC, abra su terminal serial predilecto (Ejemplo: realTerm), configure el terminal a 9600 baudios.
+Conecte el conversor de información serial TTL a USB a su respectivo terminal y luego conectelo a su PC, abra su terminal serial predilecto (Ejemplo: realTerm), configure el terminal a ```9600 bauds``` , ```1 Stop bit``` y ```8-bitdata, no parity```.
 
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/SenTempUARTclose.png?raw=true)
 
-Programe el microcontrolador con el ejemplo provisto en este repositorio (SensTemp), podrá ver en el terminal el siguiente menú:
+Programe el microcontrolador con el ejemplo provisto en este repositorio ([SensTemp](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/tree/main/SensTemp)), podrá ver en el terminal el siguiente menú:
 
+```
+    #############################
+    #                           #
+    #   Lectura de termocupla   #
+    #                           #
+    #############################
+    25.000°C
+```
 
 
 Compare las medidas con las de un termómetro externo para asegurarse que su termopar esta conctado correctamente y que la conversión se está ejecutando adecuadamente. Adicionalmente podrá intercambiar el algoritmo principal en el programa "[main.c](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/SensTemp/firmware/src/main.c)" con el algoritmo "[ShiftedBits.c](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/SensTemp/firmware/ShiftedBits.c)", para comprobar que los datos entregados por el chip MAX31855, concuerdan con la [tabla](https://www.analog.com/media/en/technical-documentation/data-sheets/max31855.pdf#MAX31855%20DS.indd%3AAnchor%2021%3A9811) de registro de datos vista previamente. 
