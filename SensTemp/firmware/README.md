@@ -1,4 +1,4 @@
-# Hardware
+# Configuración de conexiones y ejemplo básico
 
 Para medir la temperatura deberá escoger una termocupla, el chip integrado "MAX31855" es compatible con termopares de tipo K-, J-, N-, T-, S-, R-, o E- y cuenta con una resolución de hasta 0.25°C y una precición de &plusmn;2°C, el rango de temperatura depende del termopar elegido, para mas información puede revisar las [caracteristicas térmicas](https://www.analog.com/media/en/technical-documentation/data-sheets/max31855.pdf#MAX31855%20DS.indd%3AAnchor%3A9803) en el datasheet del integrado.
 
