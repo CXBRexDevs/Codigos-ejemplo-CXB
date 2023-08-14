@@ -12,7 +12,7 @@ Conecte el termopar el terminal SENS TEMP, teniendo en cuenta la polaridad de su
 
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/SenTempClose.png?raw=true)
 
-> **Nota:** si la medida de temperatura resulta muy sensible al ruido, puede conectar (o soldar) un capacitor de entre 10nF a 100nF a la borna del termopar para mitigar el ruido
+> **Nota:** Si la medida de temperatura resulta muy sensible al ruido, puede conectar (o soldar) un capacitor de entre 10nF a 100nF a la bornera del termopar para mitigar lo.
 
 Conecte el conversor de información serial TTL a USB a su respectivo terminal y luego conectelo a su PC, abra su terminal serial predilecto (Ejemplo: realTerm), configure el terminal a 9600 baudios.
 
