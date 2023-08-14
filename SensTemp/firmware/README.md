@@ -10,7 +10,7 @@ La información que transmite el conversor cuenta con tres datos, temperatura in
 
 Conecte el termopar el terminal SENS TEMP, teniendo en cuenta la polaridad de su sensor.
 
-
+![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/SenTempClose.png?raw=true)
 
 Conecte el conversor de información serial TTL a USB a su respectivo terminal y luego conectelo a su PC, abra su terminal serial predilecto (Ejemplo: realTerm), configure el terminal a 9600 baudios.
 
