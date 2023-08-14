@@ -152,7 +152,7 @@ int main ( void )
         }else{
             TermoparInt(asd, &DataInt);
             TermoparC(asd, &DataExt);
-            printf("$%f; \r", DataExt);
+            printf("%f °C \r", DataExt);
         }
         SYS_Tasks ( );
     }
