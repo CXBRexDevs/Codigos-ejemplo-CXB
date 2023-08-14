@@ -18,7 +18,7 @@ Asegúrese de seleccionar el pic instalado en su tarjeta, CXB Rex es compatible 
 
 Haga clic en “Finish” para terminar el proceso de creación del proyecto.
 
-# ## Entorno
+## Entorno
 
 Una vez creado su proyecto, inicie MCC haciendo clic en el icono “Mplab Code Configurator” ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/MCCBOTON.png?raw=true)para iniciar la configuración. Una vez haya abierto el entorno de configuración usted verá 3 áreas diferentes.
 
