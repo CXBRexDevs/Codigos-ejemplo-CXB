@@ -14,3 +14,5 @@ En la imagen superior se puede apreciar el código "[main.c](https://github.com/
 En esta gráfica se puede apreciar el ciclo completo del PWM, que se dividide en "PTPER" y "STPER" que son los periodos previos al ciclo útil para PWMH y PWML, además se visualiza el tiempo muerto "DTR" que ocurre inmediatamente antes del cambio de estado de los transistores, y finalmente se destaca el ciclo útil "PDC" que representa el periodo de actividad del motor.
 
 
+Para más información sobre el PWM se puede buscar en [https://ww1.microchip.com/downloads/en/DeviceDoc/61111E.pdf](https://ww1.microchip.com/downloads/en/DeviceDoc/61111E.pdf).
+
