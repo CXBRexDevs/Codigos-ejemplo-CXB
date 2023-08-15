@@ -82,5 +82,5 @@ Más abajo de la función transmiter se tiene la configuración recomendada en e
 <!--![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/Codigo_ADC_3.png)-->
 
 
-Para encontrar una mayor información puede buscar en [Microchip Analog-to-Digital Converter (ADC) with Threshold Detect](https://ww1.microchip.com/downloads/en/DeviceDoc/60001359b.pdf).
+Para encontrar una mayor información puede buscar en [Microchip Analog-to-Digital Converter (ADC) with Threshold Detect](https://ww1.microchip.com/downloads/en/DeviceDoc/60001359b.pdf){:target="_blank"}.
 
