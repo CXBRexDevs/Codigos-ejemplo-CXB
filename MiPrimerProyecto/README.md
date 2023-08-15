@@ -132,6 +132,8 @@ printf("Hola mundo \n");
 }
 
 ```
-Conecte su conversor TTL a USB como se muestra en la siguiente figura, luego conecte este a su PC, conecte la alimentación de la tarjeta y energicela encendiendo el switch, los LEDs testigos de 3.3V y 5V se encenderán. Programe su microcontrolador.
+Conecte su conversor TTL a USB como se muestra en la siguiente [figura](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/CXBUART.png?raw=true), luego conecte este a su PC, conecte la alimentación de la tarjeta y energicela encendiendo el switch, los LEDs testigos de 3.3V y 5V se encenderán. Programe su microcontrolador.
 
-Una vez haya programado abra el terminal serial predilecto (Ejemplo: realTerm) y configure el puerto serial igual que como se programó previemente el canal UART.
+![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/CXBUART.png?raw=true)
+
+Una vez haya programado abra el terminal serial predilecto (Ejemplo: realTerm) y configure el puerto serial igual que como se programó previemente el canal UART y abra el terminal, debería ver el mensaje ```Hola mundo``` reescribiendoce constantemente.
