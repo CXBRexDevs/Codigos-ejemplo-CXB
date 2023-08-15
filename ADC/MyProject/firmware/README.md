@@ -2,10 +2,20 @@
 El código del conversor análogo digital "[main.c](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/ADC/MyProject/firmware/src/main.c)" inicia con la variable "ctrl" y "conversión". La función transmiter se encarga de enviar el resultado del ADC a través del puerto serial
 
 
-![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/Codigo_ADC_1.png)
+```C
+int ctrl=0;
+int conversion=0;
+char text[]="";
+void transmiter(void);
+
+void transmiter(){
+    sprintf(text,"%u \n\r",ctrl);
+    sprintf(text,"%u \n\r",ADCDATA0);
+    UART5_Write(&text[0],sizeof(text));
+```
 
 
-Más abajo de este código se encuentra la inicialización de los módulos del sistema, la configuración del ADC como los triggers, el reloj, referencias de voltaje, tiempo de muestreo entre otros... 
+Más abajo de la función transmiter se tiene la configuración recomendada para el convertidor análogo digital
 
 ```C
     ADC0CFG = DEVADC0;
@@ -58,9 +68,30 @@ Más abajo de este código se encuentra la inicialización de los módulos del s
     /* Turn the ADC on */
     ADCCON1bits.ON = 1;
     /* Wait for voltage reference to be stable */
+    while(!ADCCON2bits.BGVRRDY); // Wait until the reference voltage is ready
+    while(ADCCON2bits.REFFLT); // Wait if there is a fault with the reference voltage
+    /* Enable clock to analog circuit */
+    ADCANCONbits.ANEN0 = 1; // Enable the clock to analog bias
+    /* Wait for ADC to be ready */
+    while(!ADCANCONbits.WKRDY0); // Wait until ADC0 is ready
+    /* Enable the ADC module */
+    ADCCON3bits.DIGEN0 = 1; // Enable ADC0
 ```
-![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/Codigo_ADC_2.png)
+<!--![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/Codigo_ADC_2.png)-->
 
 Y al final se encuentra el bucle para realizar la conversión, obtener el valor convertido, esperar a que la operación de conversión se realice y transmitir el valor obtenido con la función transmiter que se define en la primera parte del código.
 
-![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/Codigo_ADC_3.png)
+```C
+while ( true )
+    {
+        /* Trigger a conversion */
+        ADCCON3bits.GSWTRG = 1;
+        /* Wait the conversions to complete */
+        while (ADCDSTAT1bits.ARDY0 == 0);
+        /* fetch the result */
+        conversion = ADCDATA0;
+        transmiter();
+    }
+```
+
+<!--![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/Codigo_ADC_3.png)-->
