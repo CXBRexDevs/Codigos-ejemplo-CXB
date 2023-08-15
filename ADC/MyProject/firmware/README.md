@@ -7,7 +7,7 @@ El código del conversor análogo digital "[main.c](https://github.com/CXBRexDev
 
 Más abajo de este código se encuentra la inicialización de los módulos del sistema, la configuración del ADC como los triggers, el reloj, referencias de voltaje, tiempo de muestreo entre otros... 
 
-```
+```C
     ADC0CFG = DEVADC0;
     /* Configure ADCCON1 */
     ADCCON1 = 0; // No ADCCON1 features are enabled including: Stop-in-Idle, turbo,
