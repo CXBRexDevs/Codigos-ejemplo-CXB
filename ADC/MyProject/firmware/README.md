@@ -15,7 +15,7 @@ void transmiter(){
 ```
 
 
-Más abajo de la función transmiter se tiene la configuración recomendada para el convertidor análogo digital
+Más abajo de la función transmiter se tiene la configuración recomendada en el código MAIN para el convertidor análogo digital
 
 ```C
     ADC0CFG = DEVADC0;
@@ -79,19 +79,8 @@ Más abajo de la función transmiter se tiene la configuración recomendada para
 ```
 <!--![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/Codigo_ADC_2.png)-->
 
-Y al final se encuentra el bucle para realizar la conversión, obtener el valor convertido, esperar a que la operación de conversión se realice y transmitir el valor obtenido con la función transmiter que se define en la primera parte del código.
-
-```C
-while ( true )
-    {
-        /* Trigger a conversion */
-        ADCCON3bits.GSWTRG = 1;
-        /* Wait the conversions to complete */
-        while (ADCDSTAT1bits.ARDY0 == 0);
-        /* fetch the result */
-        conversion = ADCDATA0;
-        transmiter();
-    }
-```
-
 <!--![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/Codigo_ADC_3.png)-->
+
+
+Para encontrar una mayor información puede buscar en [Microchip Analog-to-Digital Converter (ADC) with Threshold Detect] (https://ww1.microchip.com/downloads/en/DeviceDoc/60001359b.pdf)
+
