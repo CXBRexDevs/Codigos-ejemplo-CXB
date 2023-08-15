@@ -1,5 +1,5 @@
 # Hardware
-Para el uso de este código es necesaria la implementación del transceptor CAN "TJA1050" y el uso de los pines 58 y 59 del microcontrolador en la tarjeta, que corresponden a "CAN_LO" y "CAN_HI" respectivamente.
+Para el uso de este protocolo es necesaria la implementación del transceptor CAN "TJA1050" y el uso de los pines 58 y 59 del microcontrolador, que corresponden en la PCB a "CAN_LO" y "CAN_HI" respectivamente.
 
 
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/TJA1050_CAN.png)
