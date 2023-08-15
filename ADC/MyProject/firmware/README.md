@@ -1,5 +1,5 @@
 # Hardware
-El código del conversor análogo digital "[main.c](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/ADC/MyProject/firmware/src/main.c)" inicia con la variable "ctrl" y "conversión", esta última variable debe ser modificada en función de lo que necesite el usuario, por ejemplo si se necesita la mitad de la señal recibida el valor de "conversion" será de 0,5 o si por el contrario se necesita duplicar la señal análoga el valor será de 2. La función transmiter se encarga de enviar el resultado del ADC a través del puerto serial
+El código del conversor análogo digital "[main.c](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/ADC/MyProject/firmware/src/main.c)" inicia con la variable "ctrl" y "conversión". La función transmiter se encarga de enviar el resultado del ADC a través del puerto serial
 
 
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/Codigo_ADC_1.png)
