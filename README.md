@@ -1,15 +1,14 @@
 # CXB Rex
 
-Es una plataforma de desarrollo orientada hacia control avanzado de variables físicas, que integra drivers de motores, interfaces de comunicación y acoplo de sensores, como se aprecia en la [imagen](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/015453cbffbb8909efc1b8809f53027d9adc56b4/images/BASEDibujoCXBareas.png),  con el fin de facilitar experimentos para el desarrollo academico superior.
+Es una plataforma de desarrollo orientada hacia control avanzado de variables físicas, que integra drivers de motores, interfaces de comunicación y acoplo de sensores,  con el fin de facilitar experimentos para el desarrollo academico superior. En la siguiente [imagen](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/015453cbffbb8909efc1b8809f53027d9adc56b4/images/BASEDibujoCXBareas.png) se aprecia la disposición de los periféricos disponibles al usuario.
 
 ![https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/BASEDibujoCXBareas.png?raw=true](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/015453cbffbb8909efc1b8809f53027d9adc56b4/images/BASEDibujoCXBareas.png)
-
 
 En este repositorio se encuentran los planos y archivos de fabricación, códigos ejemplo, circuitos de prueba externos a la tarjeta electronica y entre otros archivos de interés.
 
 # Guía de instalación programador
 
-## Advertencia: Pickit 3 solo es compatible con versiones de MPLAB anteriores a la versión 6.05
+## **Advertencia: Pickit 3 solo es compatible con versiones de MPLAB anteriores a la versión 6.05**
 
 ## Programas necesarios
 
