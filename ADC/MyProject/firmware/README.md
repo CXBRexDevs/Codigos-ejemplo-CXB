@@ -83,5 +83,5 @@ Despúes de la función transmiter se tiene la configuración recomendada en el 
 
 
 Para encontrar una mayor información puede buscar en
-<a href="https://ww1.microchip.com/downloads/en/DeviceDoc/60001359b.pdf" target="blank">Microchip Analog-to-Digital Converter (ADC) with Threshold Detect</a>
+<a href="https://ww1.microchip.com/downloads/en/DeviceDoc/60001359b.pdf" target="_blank">Microchip Analog-to-Digital Converter (ADC) with Threshold Detect</a>
 
