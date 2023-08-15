@@ -2,6 +2,8 @@
 
 Es una plataforma de desarrollo orientada hacia control avanzado de variables físicas, que integra drivers de motores, interfaces de comunicación y acoplo de sensores, con el fin de facilitar experimentos para el desarrollo academico superior.
 
+![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/BASEDibujoCXBareas.png?raw=true)
+
 En este repositorio se encuentran los planos y archivos de fabricación, códigos ejemplo, circuitos de prueba externos a la tarjeta electronica y entre otros archivos de interés.
 
 # Guía de instalación programador
