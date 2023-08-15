@@ -1,6 +1,6 @@
 # CXB Rex
 
-Es una plataforma de desarrollo orientada hacia control avanzado de variables físicas, que integra drivers de motores, interfaces de comunicación y acoplo de sensores, con el fin de facilitar experimentos para el desarrollo academico superior.
+Es una plataforma de desarrollo orientada hacia control avanzado de variables físicas, que integra drivers de motores, interfaces de comunicación y acoplo de sensores, como se aprecia en la [imagen](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/BASEDibujoCXBareas.png?raw=true),  con el fin de facilitar experimentos para el desarrollo academico superior.
 
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/BASEDibujoCXBareas.png?raw=true)
 
