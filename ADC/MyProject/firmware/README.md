@@ -1,19 +1,5 @@
 # Hardware
-El código del conversor análogo digital "[main.c](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/ADC/MyProject/firmware/src/main.c)" inicia con la variable "ctrl" y "conversión". La función transmiter se encarga de enviar el resultado del ADC a través del puerto serial. 
-
-```C
-int ctrl=0;
-int conversion=0;
-char text[]="";
-void transmiter(void);
-
-void transmiter(){
-    sprintf(text,"%u \n\r",ctrl);
-    sprintf(text,"%u \n\r",ADCDATA0);
-    UART5_Write(&text[0],sizeof(text));
-```
-
-Despues de la defininición de la función transmiter se tiene la configuración recomendada en el código MAIN para el convertidor análogo digital
+La configuración con MCC harmony ha presentado inconvenientes para los autores, así que se recomienda hacerla en el código MAIN para este ejemplo, la configuración se encuentra a continuación.
 ```C
     ADC0CFG = DEVADC0;
     /* Configure ADCCON1 */
@@ -75,6 +61,6 @@ Despues de la defininición de la función transmiter se tiene la configuración
     ADCCON3bits.DIGEN0 = 1; // Enable ADC0
 ```
 
-La terminal designada para recibir la señal análoga es el pin 13 conocido como AN0 mientras que la configuración de UART esta en los pines 44 (U5RX) Y 49 (U5TX).
+CXB_REX cuenta con 2 terminales designados para hacer mediciones análogas, estas son los terminales banana  mientras que la configuración de UART esta en los pines 44 (U5RX) Y 49 (U5TX).
 
 Para encontrar una mayor información sobre el módulo ADC puede buscar en [Microchip Analog-to-Digital Converter (ADC) with Threshold Detect](https://ww1.microchip.com/downloads/en/DeviceDoc/60001359b.pdf).
