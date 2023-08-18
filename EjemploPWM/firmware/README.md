@@ -17,7 +17,7 @@ int main(void)
 ```
 
 
-En la imagen superior se puede apreciar el código "[main.c](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/EjemploPWM/firmware/src/main.c)" del ejemplo del PWM donde en la línea 30 y 31 se pueden modificar el periodo del PWM y el ciclo útil respectivamente, más abajo se puede ver la inicialización del pwm y en la línea 40 la función que establece el periodo de PWM en el canal primario.
+En el espacio superior se puede apreciar el código "[main.c](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/EjemploPWM/firmware/src/main.c)" del ejemplo del PWM donde en las primeras líneas se pueden modificar el periodo del PWM y el ciclo útil respectivamente, más abajo se puede ver la inicialización del pwm al igual que la función que establece el periodo de PWM en el canal primario.
 
 
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/PWM_grafica.png?raw=true)
