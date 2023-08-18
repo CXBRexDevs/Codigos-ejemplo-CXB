@@ -29,12 +29,17 @@ En esta gráfica se puede apreciar el ciclo completo del PWM, que se dividide en
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/CXBMOTOR.png)
 
 
-+ ***Cable Negro***: Cable a tierra
++ ***Cable Negro***: Conexión a tierra
 + ***Cable Rojo***: Alimentación (3.3V)
 + ***Cable Azul***: Entrada B de encoder de cuadratura
 + ***Cable Verde***: Entrada A de encoder de cuadratura
-+ ***Cable Cafe***: Entrada B de motor 
++ ***Cable Café***: Entrada B de motor 
 + ***Cable Morado***: Entrada A de motor
+
+
+Para invertir el sentido de giro se pueden intercambiar los cables representados en el color **Café** y **Morado**, ya que son las conexiones de salida de los medio puente H de la tarjeta electrónica
+
+M1SRC es el voltaje de alimentación para los medio puente H, donde se recomienda un voltaje entre 8 y 18 voltios, también se debe conectar la conexión a tierra para el componente en la bornera.
 
 
 Para más información sobre el PWM se puede buscar en [https://ww1.microchip.com/downloads/en/DeviceDoc/61111E.pdf](https://ww1.microchip.com/downloads/en/DeviceDoc/61111E.pdf).
