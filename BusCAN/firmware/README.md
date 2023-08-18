@@ -10,4 +10,6 @@ Conecte uno de los transceptores a los terminales "CAN_TX" y "CAN_RX", así como
 
 Energice y programe el microcontrolador, conecte los terminales CANH y CANLO a otro dispositivo CAN para empezar a transmitir o recivir mensajes.
 
+![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/comunicacion_can.png)
 
+Para comunicarse entre dos dispositivos se deben utilizar dos dispositivos "TJA1050" como se observa en la imagen superior
