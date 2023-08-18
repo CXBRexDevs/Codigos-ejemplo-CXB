@@ -12,4 +12,4 @@ Energice y programe el microcontrolador, conecte los terminales CANH y CANLO a o
 
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/comunicacion_can.png)
 
-Para comunicarse entre dos dispositivos se deben utilizar dos dispositivos "TJA1050" como se observa en la imagen superior
+Para comunicar el microcontrolador con otro dispositivo se deben utilizar dos dispositivos "TJA1050", uno para las terminales CANH y CANL de la tarjeta y otro para el otro dispositivo de comunicación, la conexión se debe realizar como se observa en la imagen superior.
