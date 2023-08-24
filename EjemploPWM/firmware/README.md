@@ -17,14 +17,14 @@ int main(void)
 ```
 
 
-En el espacio superior se puede apreciar el código "[main.c](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/EjemploPWM/firmware/src/main.c)" del ejemplo del PWM donde en las primeras líneas se pueden modificar el periodo del PWM y el ciclo útil respectivamente, más abajo se puede ver la inicialización del pwm al igual que la función que establece el periodo de PWM en el canal primario.
+En el espacio superior se puede apreciar una fracción del código "[main.c](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/EjemploPWM/firmware/src/main.c)" del ejemplo del PWM donde en las primeras líneas se pueden modificar el periodo del PWM y el ciclo útil respectivamente, más abajo se puede ver la inicialización del pwm al igual que la función que establece el periodo de PWM en el canal primario.
 
 
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/PWM_grafica.png?raw=true)
 >**NOTA: imagen referenciada de: https://microchipdeveloper.com/pwr3101:pwm-operations**
 
 
-En esta gráfica se puede apreciar el ciclo completo del PWM, que se dividide en "PTPER" y "STPER" que son los periodos previos al ciclo útil para PWMH y PWML, además se visualiza el tiempo muerto "DTR" que ocurre inmediatamente antes del cambio de estado de los transistores, y finalmente se destaca el ciclo útil "PDC" que representa el periodo de actividad del motor.
+En esta gráfica se puede apreciar el ciclo completo del PWM, que se dividide en PWMH y PWML, además se visualiza el "tiempo muerto" que ocurre inmediatamente antes del cambio de estado de los transistores con el fin de proteger los componentes.
 
 
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/CXBMOTOR.png)
