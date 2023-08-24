@@ -29,7 +29,7 @@ A continuación se representa la conexión del motor con encoder realizada en la
 
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/CXBMOTOR.png)
 
-Las conexiones para este experimento son ejemplificadas en la imagen superior con distintos cables representan lo siguiente.
+Las conexiones para este experimento son ejemplificadas en la imagen superior con distintos cables, los cuales representan lo siguiente.
 
 + ***Cable Negro***: Conexión a tierra
 + ***Cable Rojo***: Alimentación (3.3V)
@@ -39,9 +39,9 @@ Las conexiones para este experimento son ejemplificadas en la imagen superior co
 + ***Cable Morado***: Entrada A de motor
 
 
-Para invertir el sentido de giro se pueden intercambiar los cables representados en el color **Café** y **Morado**, ya que son las conexiones de salida de los medio puente H de la tarjeta electrónica
+Para invertir el sentido de giro con relación a la lectura del encoder se pueden intercambiar los cables representados en el color **Café** y **Morado**, ya que son las conexiones de salida de los medio puente H de la tarjeta electrónica, o tambien se pueden invertir los cables **Azul** y **Verde**
 
-M1SRC es el voltaje de alimentación para los medio puente H, donde se recomienda un voltaje entre 8 y 18 voltios, también se debe conectar la conexión a tierra para el componente en la bornera.
+M1SRC ubicado en la zona superior izquierda [tarjeta electrónica](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/015453cbffbb8909efc1b8809f53027d9adc56b4/images/BASEDibujoCXBareas.png) es el voltaje de alimentación para los medio puente H, donde se recomienda un voltaje entre 8 y 18 voltios, también se debe conectar la conexión a tierra para el componente en la bornera.
 
 
 Para más información sobre el PWM se puede buscar en [https://ww1.microchip.com/downloads/en/DeviceDoc/61111E.pdf](https://ww1.microchip.com/downloads/en/DeviceDoc/61111E.pdf).
