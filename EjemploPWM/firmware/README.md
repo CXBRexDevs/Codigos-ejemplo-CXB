@@ -43,8 +43,8 @@ Para invertir el sentido de giro con relación a la lectura del encoder se puede
 
 M1SRC ubicado en la bornera de la zona superior izquierda de la [tarjeta electrónica](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/015453cbffbb8909efc1b8809f53027d9adc56b4/images/BASEDibujoCXBareas.png) es el voltaje de alimentación para los medio puente H, donde se recomienda un voltaje entre 8 y 18 voltios, también se debe conectar la conexión a tierra para el componente en la bornera.
 
-GND JMPR ubicado en la zona inferior izquierda de la [tarjeta electrónica](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/015453cbffbb8909efc1b8809f53027d9adc56b4/images/BASEDibujoCXBareas.png) es una terminal para un jumper que se puede conectar para compartir la tierra del medio puente H con la tierra del microcontrolador en la tarjeta
+GND JMPR ubicado en la zona inferior izquierda de la [tarjeta electrónica](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/015453cbffbb8909efc1b8809f53027d9adc56b4/images/BASEDibujoCXBareas.png) es una terminal para un jumper que se puede conectar para compartir la tierra del medio puente H con la tierra del microcontrolador en la tarjeta.
 
 
-Para más información sobre el PWM se puede buscar en [https://ww1.microchip.com/downloads/en/DeviceDoc/61111E.pdf](http://ww1.microchip.com/downloads/en/DeviceDoc/60001393A.pdf).
+Para más información sobre el PWM se puede buscar en [documentación PWM](http://ww1.microchip.com/downloads/en/DeviceDoc/60001393A.pdf).
 
