@@ -24,12 +24,13 @@ En el espacio superior se puede apreciar una fracción del código "[main.c](htt
 
 En esta gráfica se puede apreciar el ciclo completo del PWM, que se compone en PWMH y PWML, además se visualiza el "tiempo muerto" que ocurre inmediatamente antes del cambio de estado de los transistores con el fin de proteger los componentes.
 
+Para más información sobre el PWM se puede buscar en [documentación PWM](http://ww1.microchip.com/downloads/en/DeviceDoc/60001393A.pdf).
 
 A continuación se representa la conexión del motor con encoder realizada en la tarjeta  a traves de la siguiente imagen.
 
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/CXBMOTOR.png)
 
-Las conexiones para este experimento son ejemplificadas en la imagen superior con distintos cables, los cuales representan lo siguiente.
+Las conexiones para este experimento son ilustradas en la imagen superior con distintos cables, los cuales representan lo siguiente.
 
 + ***Cable Negro***: Conexión a tierra
 + ***Cable Rojo***: Alimentación (3.3V)
@@ -39,12 +40,8 @@ Las conexiones para este experimento son ejemplificadas en la imagen superior co
 + ***Cable Morado***: Entrada A de motor
 
 
-Para invertir el sentido de giro con relación a la lectura del encoder se pueden intercambiar los cables representados en el color **Café** y **Morado**, ya que son las conexiones de salida de los medio puente H de la tarjeta electrónica, o tambien se pueden invertir los cables **Azul** y **Verde**
+Para invertir el sentido de giro con relación a la lectura del encoder se pueden intercambiar los cables representados en el color **Café** y **Morado**, ya que son las conexiones de salida de los puente H de la tarjeta electrónica, o tambien se pueden invertir los cables **Azul** y **Verde**
 
-M1SRC ubicado en la bornera de la zona superior izquierda de la [tarjeta electrónica](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/015453cbffbb8909efc1b8809f53027d9adc56b4/images/BASEDibujoCXBareas.png) es el voltaje de alimentación para los medio puente H, donde se recomienda un voltaje entre 8 y 18 voltios, también se debe conectar la conexión a tierra para el componente en la bornera.
+M1SRC ubicado en la bornera de la zona superior izquierda (alimentación puente) de la [tarjeta electrónica](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/015453cbffbb8909efc1b8809f53027d9adc56b4/images/BASEDibujoCXBareas.png) es el voltaje de alimentación para los puente H, donde se recomienda un voltaje entre 8 y 18 voltios, también se debe conectar la conexión a tierra para el componente en la bornera.
 
 GND JMPR ubicado en la zona inferior izquierda de la [tarjeta electrónica](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/015453cbffbb8909efc1b8809f53027d9adc56b4/images/BASEDibujoCXBareas.png) es una terminal para un jumper que se puede conectar para compartir la tierra del medio puente H con la tierra del microcontrolador en la tarjeta.
-
-
-Para más información sobre el PWM se puede buscar en [documentación PWM](http://ww1.microchip.com/downloads/en/DeviceDoc/60001393A.pdf).
-
