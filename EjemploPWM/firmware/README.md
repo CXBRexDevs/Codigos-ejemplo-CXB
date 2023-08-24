@@ -1,5 +1,5 @@
 # Hardware
-Este código utiliza el módulo PWM número 1, El periodo se configuró por medio de los registros de la familia del microcontrolador "PTPER/STPER" mientras que el ciclo de trabajo se modificó con el registro "PDC1".
+Este código utiliza el módulo PWM número 1, El periodo se configuró por medio de los registros del pwm de la familia del microcontrolador PIC32.
 
 
 ```C
