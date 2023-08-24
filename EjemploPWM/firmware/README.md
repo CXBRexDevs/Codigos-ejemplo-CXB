@@ -1,19 +1,17 @@
 # Hardware
-Este código utiliza el módulo PWM número 1, El periodo se configuró por medio de los registros del pwm de la familia del microcontrolador PIC32.
+Este código utiliza el módulo PWM número 1, el periodo se configuró por medio de los registros del pwm de la familia del microcontrolador PIC32.
 
 
 ```C
-#define PERIODO_PWM      1000 
-#define PORCENT          1     
+#define PERIODO_PWM      1000  // periodo del PWM
+#define PORCENT          1     // ciclo útil del PWM
 
 int main(void)
 {
-    // Inicializa el módulo PWM
-    MCPWM_Initialize();
-    MCPWM_Start();
+    MCPWM_Initialize();     // Inicializa el módulo PWM
+    MCPWM_Start();          // Inicializa el funcionamiento del PWM  
     
-    // Establece un ciclo útil
-    MCPWM_ChannelPrimaryDutySet(MCPWM_CH_1, PERIODO_PWM * 1);
+    MCPWM_ChannelPrimaryDutySet(MCPWM_CH_1, PERIODO_PWM * 1); // Establece un ciclo útil en el canal 1
 ```
 
 
@@ -24,11 +22,14 @@ En el espacio superior se puede apreciar una fracción del código "[main.c](htt
 >**NOTA: imagen referenciada de: https://microchipdeveloper.com/pwr3101:pwm-operations**
 
 
-En esta gráfica se puede apreciar el ciclo completo del PWM, que se dividide en PWMH y PWML, además se visualiza el "tiempo muerto" que ocurre inmediatamente antes del cambio de estado de los transistores con el fin de proteger los componentes.
+En esta gráfica se puede apreciar el ciclo completo del PWM, que se compone en PWMH y PWML, además se visualiza el "tiempo muerto" que ocurre inmediatamente antes del cambio de estado de los transistores con el fin de proteger los componentes.
 
+
+A continuación se representa la conexión del motor con encoder realizada en la tarjeta  a traves de la siguiente imagen.
 
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/CXBMOTOR.png)
 
+Las conexiones para este experimento son ejemplificadas en la imagen superior con distintos cables representan lo siguiente.
 
 + ***Cable Negro***: Conexión a tierra
 + ***Cable Rojo***: Alimentación (3.3V)
