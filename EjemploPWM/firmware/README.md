@@ -3,8 +3,8 @@ Este código utiliza el módulo PWM número 1, El periodo se configuró por medi
 
 
 ```C
-#define PERIODO_PWM      1000    // periodo del PWM
-#define PORCENT          1       // ciclo útil del PWM
+#define PERIODO_PWM      1000 
+#define PORCENT          1     
 
 int main(void)
 {
@@ -21,6 +21,7 @@ En el espacio superior se puede apreciar el código "[main.c](https://github.com
 
 
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/PWM_grafica.png?raw=true)
+>**NOTA: imagen referenciada de: https://microchipdeveloper.com/pwr3101:pwm-operations**
 
 
 En esta gráfica se puede apreciar el ciclo completo del PWM, que se dividide en "PTPER" y "STPER" que son los periodos previos al ciclo útil para PWMH y PWML, además se visualiza el tiempo muerto "DTR" que ocurre inmediatamente antes del cambio de estado de los transistores, y finalmente se destaca el ciclo útil "PDC" que representa el periodo de actividad del motor.
