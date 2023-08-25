@@ -1,5 +1,5 @@
 # Hardware
-Este código utiliza el módulo PWM número 1, el periodo se configuró por medio de los registros del pwm de la familia del microcontrolador PIC32.
+Este código utiliza el módulo PWM número 1, el periodo se configuró por medio de los registros del PWM de la familia del microcontrolador PIC32.
 
 
 ```C
@@ -15,7 +15,7 @@ int main(void)
 ```
 
 
-En el espacio superior se puede apreciar una fracción del código "[main.c](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/EjemploPWM/firmware/src/main.c)" del ejemplo del PWM donde en las primeras líneas se pueden modificar el periodo del PWM y el ciclo útil respectivamente, más abajo se puede ver la inicialización del pwm al igual que la función que establece el periodo de PWM en el canal primario.
+En el espacio superior se puede apreciar una fracción del código "[main.c](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/EjemploPWM/firmware/src/main.c)" del ejemplo del PWM donde en las primeras líneas se pueden modificar el periodo del PWM y el ciclo útil respectivamente, más abajo se puede ver la inicialización del PWM al igual que la función que establece el periodo de PWM en el canal primario.
 
 
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/PWM_grafica.png?raw=true)
@@ -26,7 +26,7 @@ En esta gráfica se puede apreciar el ciclo completo del PWM, que se compone en 
 
 Para más información sobre el PWM se puede buscar en [documentación PWM](http://ww1.microchip.com/downloads/en/DeviceDoc/60001393A.pdf).
 
-A continuación se representa la conexión del motor con encoder realizada en la tarjeta  a traves de la siguiente imagen.
+A continuación se representa la conexión del motor con encoder realizada en la tarjeta a través de la siguiente imagen.
 
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/CXBMOTOR.png)
 
