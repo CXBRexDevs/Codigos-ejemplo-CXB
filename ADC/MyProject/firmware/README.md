@@ -68,8 +68,8 @@ Más adelante se ilustra una imagen que muestra el módulo UART al lado derecho 
 
 A continuación se presenta un listado indicando las conexiones que se observan en la imagen superior.
 
-+**Cable Azul:** Transmisión (UART CXB_REX) → Recepción (UART MÓDULO EXTERNO)
-+**Cable Rojo:** Recepción (UART CXB_REX) → Transmisión (UART MÓDULO EXTERNO)
-+**Cable Negro:** GND (UART CXB_REX) → GND (UART MÓDULO EXTERNO)
++ **Cable Azul:** Transmisión (UART CXB_REX) → Recepción (UART MÓDULO EXTERNO)
++ **Cable Rojo:** Recepción (UART CXB_REX) → Transmisión (UART MÓDULO EXTERNO)
++ **Cable Negro:** GND (UART CXB_REX) → GND (UART MÓDULO EXTERNO)
 
 Para encontrar una mayor información sobre el módulo ADC puede buscar en [Microchip Analog-to-Digital Converter (ADC) with Threshold Detect](https://ww1.microchip.com/downloads/en/DeviceDoc/60001359b.pdf).
