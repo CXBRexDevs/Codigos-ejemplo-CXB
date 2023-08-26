@@ -61,6 +61,16 @@ La configuración con MCC harmony ha presentado inconvenientes para los autores,
     ADCCON3bits.DIGEN0 = 1; // Enable ADC0
 ```
 
-CXB_REX cuenta con 2 terminales designados para hacer mediciones análogas, estas son los terminales banana  mientras que la configuración de UART esta en los pines 44 (U5RX) Y 49 (U5TX).
+CXB_REX cuenta con un módulo al lado derecho de la tarjeta, este módulo cuenta con conexiones de transmisión, recepción y GND (tierra). La configuración de UART esta ubicada en el microcontrolador en los pines 42 (RX) Y 44 (TX).
+
+Más adelante se ilustra una imagen con la conexión realizada del módulo UART de la tarjeta con un módulo UART externo.
+
+![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/CXBUART.png).
+
+A continuación se presenta un listado indicando las conexiones que se observan en la imagen superior.
+
+**Cable Azul:** Transmisión (UART CXB_REX) → Recepción (UART MÓDULO EXTERNO)
+**Cable Rojo:** Recepción (UART CXB_REX) → Transmisión (UART MÓDULO EXTERNO)
+**Cable Negro:** GND (UART CXB_REX) → GND (UART MÓDULO EXTERNO)
 
 Para encontrar una mayor información sobre el módulo ADC puede buscar en [Microchip Analog-to-Digital Converter (ADC) with Threshold Detect](https://ww1.microchip.com/downloads/en/DeviceDoc/60001359b.pdf).
