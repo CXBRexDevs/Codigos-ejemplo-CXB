@@ -1,69 +1,68 @@
 # Hardware
 La configuración con MCC harmony ha presentado inconvenientes para los autores, así que se recomienda hacerla en el código MAIN para este ejemplo, la configuración se encuentra a continuación.
 ```C
-    ADC0CFG = DEVADC0;
-    /* Configure ADCCON1 */
-    ADCCON1 = 0; // No ADCCON1 features are enabled including: Stop-in-Idle, turbo,
-    // CVD mode, Fractional mode and scan trigger source.
-    /* Configure ADCCON2 */
-    ADCCON2 = 0; // Since, we are using only
-    /* Initialize warm up time register */
+    ADC0CFG = DEVADC0; //inicia las opciones de coniguración para el ADC
+    ADCCON1 = 0; // Desactiva caracteristicas del addcon como la caracteristica turbo y detener en modo inactividad
+    ADCCON2 = 0; 
+    /* Inicializar el tiempo de calentamiento del registro */
     ADCANCON = 0;
-    ADCANCONbits.WKUPCLKCNT = 5; // Wakeup exponent = 32 * TADx
-    /* Clock setting */
+    ADCANCONbits.WKUPCLKCNT = 5; // establece el tiempo de calentamiento del registro para 2^5 ciclos de reloj
+    /* opciones de reloj */
     ADCCON3 = 0;
-    ADCCON3bits.ADCSEL = 0; // Select input clock source
-    ADCCON3bits.CONCLKDIV = 1; // Control clock frequency is half of input clock
-    ADCCON3bits.VREFSEL = 0; // Select AVDD and AVSS as reference source
-    /* Select ADC sample time and conversion clock */
-    ADC0TIMEbits.ADCDIV = 1; // ADC0 clock frequency is half of control clock = TAD0
-    ADC0TIMEbits.SAMC = 5; // ADC0 sampling time = 5 * TAD0
-    ADC0TIMEbits.SELRES = 3; // ADC0 resolution is 12 bits
-    /* Select analog input for ADC modules, no presync trigger, not sync sampling */
-    ADCTRGMODEbits.SH0ALT = 0; // ADC0 = AN0
-    /* Select ADC input mode */
-    ADCIMCON1bits.SIGN0 = 0; // unsigned data format
-    ADCIMCON1bits.DIFF0 = 0; // Single ended mode
-    /* Configure ADCGIRQENx */
-    ADCGIRQEN1 = 0; // No interrupts are used
+    ADCCON3bits.ADCSEL = 0; // Selección de fuente de referencia de reloj
+    ADCCON3bits.CONCLKDIV = 1; // El control de frecuencia de reloj es la mitad de la entrada
+    ADCCON3bits.VREFSEL = 0; // Selecciona AVDD y AVSS como fuente de referencia
+    /*selección del tiempo de muestreo de ADC y conversión del reloj*/
+    ADC0TIMEbits.ADCDIV = 1; // ADC0 control de frecuencia de reloj es la mitad del reloj de control = TAD0
+    ADC0TIMEbits.SAMC = 5; // ADC0 tiempo de muestreo = 5 * TAD0
+    ADC0TIMEbits.SELRES = 3; // ADC0 resolución de 12 bits
+    /* Selección de entrada análoga para módulos ADC */
+    ADCTRGMODEbits.SH0ALT = 0; // Selección de entrada análogica para ADC0 = AN0
+    /* Selección de modo de entrada ADC */
+    ADCIMCON1bits.SIGN0 = 0; // Formato de datos
+    ADCIMCON1bits.DIFF0 = 0; // Modo de entrada único
+    /* Configuración ADCGIRQENx */
+    ADCGIRQEN1 = 0; // Sin uso de interrupciones
     ADCGIRQEN2 = 0;
     /* Configure ADCCSSx */
-    ADCCSS1 = 0; // No scanning is used
+    ADCCSS1 = 0; // Deshabilitado de canales de escaneo
     ADCCSS2 = 0;
-    /* Configure ADCCMPCONx */
-    ADCCMPCON1 = 0; // No digital comparators are used. Setting the ADCCMPCONx
-    ADCCMPCON2 = 0; // register to '0' ensures that the comparator is disabled.
-    ADCCMPCON3 = 0; // Other registers are ?don't care?.
+    /* Configuración ADCCMPCONx */
+    ADCCMPCON1 = 0;
+    ADCCMPCON2 = 0; 
+    ADCCMPCON3 = 0; // Desahilitado de comparadores
     ADCCMPCON4 = 0;
 
     /* Configure ADCFLTRx */
-    ADCFLTR1 = 0; // No oversampling filters are used.
+    ADCFLTR1 = 0; // Desactivación de filtros de sobremuestreo
     ADCFLTR2 = 0;
     ADCFLTR3 = 0;
     ADCFLTR4 = 0;
 
-    /* Set up the trigger sources */
-    ADCTRGSNSbits.LVL0 = 0; // Edge trigger
-    ADCTRG1bits.TRGSRC0 = 1; // Set AN0 to trigger from software
-    /* Early interrupt */
-    ADCEIEN1 = 0; // No early interrupt
+    /* Activar fuentes de disparador o activador*/
+    ADCTRGSNSbits.LVL0 = 0; // Configurar el disparador de nivel
+    ADCTRG1bits.TRGSRC0 = 1; // Fuente de disparo por el canal 0
+    /* Interrupción */
+    ADCEIEN1 = 0; // Desactivación de interrupción temprana
     ADCEIEN2 = 0;
-    /* Turn the ADC on */
+    /* Encender el módulo ADC*/
     ADCCON1bits.ON = 1;
-    /* Wait for voltage reference to be stable */
-    while(!ADCCON2bits.BGVRRDY); // Wait until the reference voltage is ready
-    while(ADCCON2bits.REFFLT); // Wait if there is a fault with the reference voltage
-    /* Enable clock to analog circuit */
-    ADCANCONbits.ANEN0 = 1; // Enable the clock to analog bias
-    /* Wait for ADC to be ready */
-    while(!ADCANCONbits.WKRDY0); // Wait until ADC0 is ready
-    /* Enable the ADC module */
-    ADCCON3bits.DIGEN0 = 1; // Enable ADC0
+    /* Esperar que el voltaje de referencia este estable */
+    while(!ADCCON2bits.BGVRRDY); // Esperar que el voltaje de referencia este lista
+    while(ADCCON2bits.REFFLT); // Esperar que no haya fallos en el voltaje de referencia
+    /* Habilitar circuito de reloj análogo */
+    ADCANCONbits.ANEN0 = 1; // 
+    /* Esperar que el ADC este listo */
+    while(!ADCANCONbits.WKRDY0); // Esperar que ADC0 este listo
+    /* Habilitar el módulo ADC */
+    ADCCON3bits.DIGEN0 = 1; // Habilitar ADC0
 ```
+>**NOTA: código ejemplo de [https://microchipdeveloper.com/pwr3101:pwm-operations](https://ww1.microchip.com/downloads/en/DeviceDoc/Section22._12-bit_HS_SAR_ADC_FRM_DS60001344E.pdf)**
 
-CXB_REX cuenta con un módulo al lado derecho de la tarjeta, este módulo cuenta con conexiones de transmisión, recepción y GND (tierra). La configuración de UART esta ubicada en el microcontrolador en los pines 42 (RX) Y 44 (TX).
 
-Más adelante se ilustra una imagen con la conexión realizada del módulo UART de la tarjeta con un módulo UART externo.
+CXB_REX cuenta con un módulo UART, este módulo cuenta con conexiones de transmisión, recepción y GND (tierra). La configuración de UART esta ubicada en el microcontrolador en los pines 42 (RX) Y 44 (TX).
+
+Más adelante se ilustra una imagen que muestra el módulo UART al lado derecho central de la tarjeta y también se ilustra la conexión realizada del módulo UART de la tarjeta con un módulo UART externo.
 
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/CXBUART.png).
 
