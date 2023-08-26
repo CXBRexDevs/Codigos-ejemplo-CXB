@@ -1,18 +1,18 @@
 # Hardware
 La configuración con MCC harmony ha presentado inconvenientes para los autores, así que se recomienda hacerla en el código MAIN para este ejemplo, la configuración se encuentra a continuación.
 ```C
-    ADC0CFG = DEVADC0; //inicia las opciones de coniguración para el ADC
+    ADC0CFG = DEVADC0; //Inicia las opciones de coniguración para el ADC
     ADCCON1 = 0; // Desactiva caracteristicas del addcon como la caracteristica turbo y detener en modo inactividad
     ADCCON2 = 0; 
     /* Inicializar el tiempo de calentamiento del registro */
     ADCANCON = 0;
-    ADCANCONbits.WKUPCLKCNT = 5; // establece el tiempo de calentamiento del registro para 2^5 ciclos de reloj
-    /* opciones de reloj */
+    ADCANCONbits.WKUPCLKCNT = 5; // Establece el tiempo de calentamiento del registro para 2^5 ciclos de reloj
+    /* Opciones de reloj */
     ADCCON3 = 0;
     ADCCON3bits.ADCSEL = 0; // Selección de fuente de referencia de reloj
     ADCCON3bits.CONCLKDIV = 1; // El control de frecuencia de reloj es la mitad de la entrada
     ADCCON3bits.VREFSEL = 0; // Selecciona AVDD y AVSS como fuente de referencia
-    /*selección del tiempo de muestreo de ADC y conversión del reloj*/
+    /*Selección del tiempo de muestreo de ADC y conversión del reloj*/
     ADC0TIMEbits.ADCDIV = 1; // ADC0 control de frecuencia de reloj es la mitad del reloj de control = TAD0
     ADC0TIMEbits.SAMC = 5; // ADC0 tiempo de muestreo = 5 * TAD0
     ADC0TIMEbits.SELRES = 3; // ADC0 resolución de 12 bits
@@ -57,7 +57,7 @@ La configuración con MCC harmony ha presentado inconvenientes para los autores,
     /* Habilitar el módulo ADC */
     ADCCON3bits.DIGEN0 = 1; // Habilitar ADC0
 ```
->**NOTA: código ejemplo de [https://microchipdeveloper.com/pwr3101:pwm-operations](https://ww1.microchip.com/downloads/en/DeviceDoc/Section22._12-bit_HS_SAR_ADC_FRM_DS60001344E.pdf)**
+>**NOTA: código ejemplo de [https://microchipdeveloper.com/pwr3101:pwm-operations](https://ww1.microchip.com/downloads/en/DeviceDoc/Section22._12-bit_HS_SAR_ADC_FRM_DS60001344E.pdf) (página 66)**
 
 
 CXB_REX cuenta con un módulo UART, este módulo cuenta con conexiones de transmisión, recepción y GND (tierra). La configuración de UART esta ubicada en el microcontrolador en los pines 42 (RX) Y 44 (TX).
