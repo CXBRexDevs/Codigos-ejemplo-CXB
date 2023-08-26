@@ -106,9 +106,9 @@ Conecte el módulo UART a USB, como se ilustra en la siguiente imágen.
 
 Conecte los cables de los sensores mencionados a sus respectivos puertos, incluyendo la tierra de los sensores, conecte la alimentación de los sensores a la fuente de PLC y asegurece de puentear la tierra de la fuente con la tierra del circuito, **tenga cuidado de conectar los sensores a su respectivo puerto y no los intercambie**. Los circuitos internos de CXB correspondientes al acople de las señales de los sensores se ilustran a continuación.
 
-![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/OpAmps.png?raw=true)
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/DivTens1.png?raw=true)
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/DivTens2.png?raw=true)
+![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/OpAmps.png?raw=true)
 
 Para mayor información sobre el módulo ADC en dispositivos PIC32 puede leer [Microchip Analog-to-Digital Converter (ADC) with Threshold Detect](https://ww1.microchip.com/downloads/en/DeviceDoc/60001359b.pdf), [Section 22. 12-bit High-Speed Successive Approximation
 Register (SAR) Analog-to-Digital Converter (ADC)](https://ww1.microchip.com/downloads/en/DeviceDoc/Section22._12-bit_HS_SAR_ADC_FRM_DS60001344E.pdf) y el cápitulo designado a ADC en el datasheet de su microcontrolador, por ejemplo [PIC32MK1024MCF064](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC32MK_GP_MC_Familly_Datasheet_60001402G.pdf#G26.1079552).
