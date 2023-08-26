@@ -64,7 +64,7 @@ CXB_REX cuenta con un módulo UART, este módulo cuenta con conexiones de transm
 
 Más adelante se ilustra una imagen que muestra el módulo UART al lado derecho central de la tarjeta y también se ilustra la conexión realizada del módulo UART de la tarjeta con un módulo UART externo.
 
-![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/CXBUART.png).
+![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/CXBUART.png)
 
 A continuación se presenta un listado indicando las conexiones que se observan en la imagen superior.
 
