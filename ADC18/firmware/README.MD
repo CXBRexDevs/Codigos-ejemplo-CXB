@@ -1,4 +1,4 @@
-# Configuración de registors
+# Configuración de registros
 
 A pesar de ser muy útil en la mayoria de proyectos, la configuración con MCC harmony para los puertos ADCHS han presentado lo que presumiblemente sean bugs, así que se recomienda hacer una configuración manual del archivo "[plib_adchs.c](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/ADC18/firmware/src/config/default/peripheral/adchs/plib_adchs.c)" para este ejemplo, la configuración de registros se encuentra a continuación y fué adaptada de el ejemplo provisto en el [manual para puertos ADC para pic32](https://ww1.microchip.com/downloads/en/DeviceDoc/Section22._12-bit_HS_SAR_ADC_FRM_DS60001344E.pdf), el cual cueta con algunos errores de tipografia, los cuales fueron corregidos en este repositorio.
 
