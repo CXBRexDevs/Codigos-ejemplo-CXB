@@ -1,0 +1,13 @@
+(footprint "DIYHole" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (attr through_hole)
+  (fp_text reference "REF**" (at 0 -0.5 unlocked) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp d1620434-cb1a-4348-b55f-e504bd174019)
+  )
+  (fp_text value "DIYHole" (at 0 1 unlocked) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 20056eb9-46eb-4a77-9ab2-0e0d532a8cd1)
+  )
+  (pad "1" thru_hole circle (at 0 0.254) (size 0.7 0.7) (drill 0.4) (layers "*.Cu" "*.Mask") (tstamp f064d2ba-185a-444f-b6b4-5278adbb28c3))
+)
