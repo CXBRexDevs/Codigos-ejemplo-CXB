@@ -1,5 +1,9 @@
+# Software
+
+El funcionamiento esencial de este código se fundamenta en presentar un menú al usuario, brindándole la opción de presionar el número 1 para transmitir información, o en su lugar presionar el número 2 para recibir información, si se produce un error o inconveniente durante la comunicación al igual que si el usuario provee una entrada incorrecta en el menú el programa notificará lo ocurrido y retornará al menú para solicitar nuevamente una respuesta del usuario para transmitir o recibir información.
+
 # Hardware
-Para utilizar la comunicación del protocolo CAN es necesaria la implementación de un transceptor "TJA1050", en las siguientes imagenes se ilustra el circuito y las funciones del integrado.
+Para utilizar la comunicación del protocolo CAN es necesaria la implementación de un transceptor "TJA1050", en las siguientes imágenes se ilustra el circuito y las funciones del integrado.
 
 ![](https://github.com/CXBRexDevs/Codigos-ejemplo-CXB/blob/main/images/TJA1050_CAN.png)
 
