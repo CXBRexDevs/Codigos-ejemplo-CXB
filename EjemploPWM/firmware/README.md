@@ -1,4 +1,4 @@
-# Hardware
+# Software
 Este código utiliza el módulo PWM número 1, el periodo se configuró por medio de los registros del PWM de la familia del microcontrolador PIC32.
 
 
@@ -25,6 +25,8 @@ En el espacio superior se puede apreciar una fracción del código "[main.c](htt
 En esta gráfica se puede apreciar el ciclo completo del PWM, que se compone en PWMH y PWML, además se visualiza el "tiempo muerto" que ocurre inmediatamente antes del cambio de estado de los transistores con el fin de proteger los componentes.
 
 Para más información sobre el PWM se puede buscar en [documentación PWM](http://ww1.microchip.com/downloads/en/DeviceDoc/60001393A.pdf).
+
+# Hardware
 
 A continuación se representa la conexión del motor con encoder realizada en la tarjeta a través de la siguiente imagen.
 
