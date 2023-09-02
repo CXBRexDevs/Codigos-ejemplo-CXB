@@ -1,9 +1,0 @@
-Manufacturer=Cal Test
-PartNumber=CT3151V1-0
-PartCategory=Connector
-PackageCategory=Other
-PinCount=4
-Version=1.3
-Released=2019-01-26 13:39:07
-Downloaded=2022-09-15 22:51:33
-3D=Y
