@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<project>                                  
+  <executable name="dist/default_PIC32MK1024MCF064/production/CXB.X.production.elf">                 
+    <memory name="program">                 
+      <units>bytes</units>                 
+      <length>1049728</length>                 
+      <used>32044</used>                     
+      <free>1017684</free>                     
+    </memory>                              
+    <memory name="data">              
+      <units>bytes</units>                 
+      <length>262144</length>                 
+      <used>3392</used>                     
+      <free>258752</free>                     
+    </memory>                              
+  </executable>                            
+</project>                                 
